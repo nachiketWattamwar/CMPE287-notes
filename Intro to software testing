@@ -1,0 +1,41 @@
+- Verification
+	- Are we building product right?
+	- Making sure that software at a specific dev stage is satisfies the requirements established at the beginning of the phase
+	
+- Validation
+	- Are we designing the right product?
+	- Set of activities to ensure the software has been build conforming to customer requirements
+	
+- Objectives of software testing:
+	(1) Requirement Confirmation - Confirm the given software product requirements by testing based on the requirements
+	(2) Bug Detection – Detect as many bugs as possible through software testing
+	(3) Product Assurance quality – Assure the quality of a software product by testing
+
+- Challenges/limitations in software testing:
+	(1) Requirements and specifications are not clear
+	(2) Engineers lack understanding and knowledge of given product
+	(3) Test tools limitations: Many test tools have diverse limitations in technology, programming, and operation platform, and so on.
+	(4) Budget and schedule: Lack of resources and time
+
+- Software error/bug: A mismatch between the program and its specification is an error 	
+
+- Software problem management process:
+	- Problem detection
+	- Problem reporting 
+	- Problem assignment
+	- Problem analysis
+	- Problem resolution
+	- Problem validation
+	- Problem closure
+	
+- Testing process:
+	1. Test planning: Decide on schedule, test activities, scope, risks, objectives, approach
+	2. Test designing: Decide on test cases, test tools, test environment and infra based on soft req specification document
+	3. Test execution: perform testing, execute test cases, record test results, test-automation, generate bug reports
+	4. Test evaluation: Validate testing results and analyze test coverage, test results, bugs, cost
+	
+- Software test lifecycle:
+	1. Unit testing: blackbox and whitebox testing
+	2. Integration testing: component integration
+	3. Validation testing: Focus on user scenarios, UI, behaviors
+	4. System testing: Performance testing, load testing, stress testing, installation and security testing
