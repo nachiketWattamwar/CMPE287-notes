@@ -1,3 +1,8 @@
+- Why does software components lack of testability?
+	a) No or little validation of software components before testing
+	b) No way to monitor software behavior
+	c) Insufficient testing specification
+
 - Verification
 	- Are we building product right?
 	- Making sure that software at a specific dev stage is satisfies the requirements established at the beginning of the phase
@@ -39,3 +44,17 @@
 	2. Integration testing: component integration
 	3. Validation testing: Focus on user scenarios, UI, behaviors
 	4. System testing: Performance testing, load testing, stress testing, installation and security testing
+	
+- Who perform software testing:
+	Test manager
+	Software Test Engineers and Testers
+	Development Engineers
+	Quality Assurance Group and Engineers
+	Independent Test Group
+
+	
+
+
+
+
+
