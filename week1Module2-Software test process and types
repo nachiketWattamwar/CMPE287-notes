@@ -1,0 +1,104 @@
+Activites of software test process:
+
+1)  Test planning and control
+
+  a) Test planning has below objectives:
+  
+      To determine test approach.
+      To find scope and risks and objectives of testing.
+      To find exit criteria such as coverage criteria.
+      
+  b) Test control has below objectives:
+      To provide information on testing.
+      To initiate corrective actions.
+      To make decisions.
+      
+      
+
+2)  Analysis and design
+      
+     Major tasks are as follows:
+      To design the tests.
+      To review the test basis.
+      To identify test conditions.
+      
+
+3)  Implementation and execution
+
+   Test implementation makes use of things such as test cases designed wrt test conditions,
+   test scripts for automation and testing infrastructure.
+   
+   Major tasks are :
+    To create test suites and individual tests.
+    
+    To execute test suites and individual tests.
+    
+    Comparing test results with expected results.
+    
+    To implement the testing environment.
+    
+    To log the test results for audit trail.
+    
+
+4)  Evaluating exit criteria and Reporting
+   Exit criteria depends on the level of risk assessment of the project.
+   They come into picture when :
+      When deadlines are achieved.
+      When rates of bugs captured is below a certain level.
+      Maximum test cases are executed with a certain pass percentage.
+      
+
+
+
+5)  Test closure and activities
+    Test closure activities are done when the software is delivered or any other of following reasons:
+    Project is cancelled.
+    Target is achieved.
+    All necessary information is obtained for testing.
+    Update is done or project reaches a maintenance state.
+    
+    
+ UNIT TESTING (component level testing):
+     Most basic form of testing.
+     Aim is to find errors in design and implementation of individual components, interfaces and program structure.
+     
+    
+INTEGRATION TESTING:
+    A group of components are tested together to ensure quality.
+    Focus is to uncover errors in architecture.
+    Rescource intergration and environment integration.
+    Integration between the components.
+    
+ FUNCTION VALIDATION TESTING:
+   This testing is based on the requirements to ensure we deliver the right product.
+   Focus is to uncover errors in :
+   System input/output.
+   System interfaces.
+   System information data and functions.
+   User information.
+
+SYSTEM TESTING:
+   The entire system is tested as a whole to make sure the elements are meshed properly and 
+   necessary performance is achieved.
+   Focus is uncover the
+   system performance
+   system reliability and recovery
+   system behaviour like stress and load testing   
+   integration of external software into the system.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
