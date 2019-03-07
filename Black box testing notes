@@ -1,0 +1,155 @@
+- Black-box testing:
+	- Set of activities to test a software based on the software requirement specification
+	- to discover errors based on program requirements and product specifications
+
+==================================
+(A) Equivalence partitioning (EP):
+==================================
+- The idea behind this is to divide the input value space for a under-test program into a set of partitions (or classes). Each partition only needs one test input vector to cover it even though there are many others.
+- Equivalence partitions are also known as equivalence classes.
+
+- Assumptions for EP:
+	(1) Software under test will show same behavior for all inputs of a given equi partition
+	(2) Software under test will show similar failure for all inputs of a given equi partition
+	
+- Guidelines to create equivalence partitions:
+	(1) Range: One valid and two invalid classes
+	(2) Specific Set: One valid and two invalid classes
+	(3) Specific value: One valid and one invalid classes
+	(4) Boolean: One valid and one invalid classes
+	
+- Steps:
+Step #1: Identify equivalent input value classes 
+	All EP classes must be independent, and not overlapping
+	All EP classes must cover all of input value space
+	EP classes must cover both invalid input values and valid input values
+Step #2: Select one test from each EP class, and identify its expected output
+
+- Advantage:
+	- Simple to use
+	- Cost reduction for software testing by selecting one test for each EP class
+- Test Coverage:
+	- Using Equivalence Partitioning, we can achieve EP class test coverage:
+	- For each EP class (or partition), there must be at least one test.
+- Limitations:
+	- Very difficult  to apply when under-test software has many
+	- Input data parameters, and multi-dimension input value spaces.
+- Challenges:
+	- Lack of step-by-step tips to identify EP classes for a software
+	- Difficult to deal with a complicated input data set
+
+- Examples:
+(a) area code: input condition, Boolean - the area code may or may not be present.
+	input condition, range      - value defined between 200 and 900
+
+(b) password: input condition, Boolean - a password nay or may not be present.
+	input condition, value - six character string.
+
+(c) command: input condition, set - containing commands noted before.
+
+===========================
+(B) Boundry value analysis:
+===========================
+- Test design technique. Selection to test cases from given equivalence classes
+- Guidelines:
+	(A) If an input condition specifies a range bounded by values a and b, test cases should be designed with value a and b, just above and below a and b.
+	(B) If an input condition specifies a set of values, test cases should be developed to exercise the minimum and maximum numbers. Values just above and below minimum and maximum are also tested.
+	(C) Guidelines 1 and 2 are applied to output condition. If internal program data structures have prescribed boundaries, be certain to design a test case to exercise the data structure at its boundary. E.g.
+	To test array, input condition: empty, single element, full element, out-of-boundary
+				search for element: element is inside array or the element is not inside array
+- Steps:
+	Step #1: Identify all of system boundaries 
+	Step #2: For each boundary (i.e. B), identify representative boundary values 
+		Select representative boundary values on B.
+		Select representative values beyond each lower bound of B.
+		Select representative values beyond each higher bound of B. 
+	Step #3: Define tests for identified boundary values
+
+- Advantage:
+	- Simple and easy to understand and use
+- Test Coverage:
+	- The boundary value method assures the boundary value test coverage.
+	- For each value boundary, there must be adequate boundary value 	tests to cover it.
+- Limitations:
+	- Only effective to detect boundary value related software errors.
+Challenges:
+	- It is difficult to identify all boundaries for a software when the 	given requirements are incomplete.
+
+- Example:
+	(1) For username between 1 to 30 characters, boundries would be
+		- length=0
+		- length=1
+		- length=15
+		- length=30
+		- length=31
+		
+===================
+(C) Decision table:
+===================
+- The test cases are designed to execute possible combinations of inputs
+- A decision table is a table of rows and columns separated into four quadrants:
+	- Conditions stub (operations for which inputs are to be considered)
+	- Action stub (action for each input combinations)
+	- Rules (All combinations on input)
+	- Entries
+- Importance of decision table method:
+	- Identify all possible inputs and implement correct business logic
+	- Simple way to specify complex business logic
+	- Prepare set of requirements for complex business rules
+- Steps:
+	(1) List All Stub Conditions 
+	(2) Calculate the Number of Possible Combinations (Rules):
+		- For N stub conditions, there will be 2^N combinations or rules
+- Advantage:
+	- Easy to understand 
+	- Map nicely to a set of business rules 
+	- Applied to real problems 
+	- Able to process both numerical and categorical data 
+- Test Coverage:
+	- The decision table value method assures the decision table test coverage.
+	- For each rule in the table, there is a test case derived.
+- Limitations:
+	- Limited to one output attribute 
+	- Decision tree algorithms are unstable 
+	- Trees created from numeric datasets can be complex.
+- Challenges:
+	- It is difficult to identify all the conditions in a given scenario.
+
+=====================
+(D) Scenario testing:
+=====================
+- Scenario testing is done by creating test scenarios which replicate the end users usage scenarios based on the given system requirements and use cases. 
+- A test scenario can be a independent test case or a series of test cases that makes a test suit. Test scenario is just a story which explains the usage of the software by any end user.
+- In scenario testing, testers needs to communicate with system users, clients, stakeholders, and developers to come up the user scenarios first, then create test scenarios.
+- In scenario testing the testers put themselves in the end users shoes and figure out the real world scenarios or consider the use cases which can be performed on the software by end users.
+- Scenario Testing Steps:
+	Step #1 – Identify use cases/user operation scenarios 
+	Step #2 -  Define test cases based on the identified scenarios
+	Step #3 -  Execute scenario tests
+- Identify system usage scenarios with the help of:
+	- Story lines
+	- State transitions
+	- Business verticals
+	- Implemntation story from customers
+- Advantages:
+	- Understand the complexity of the application easily 
+	- Helps to find bugs at the application level from user perspectives
+	- Reduces the chances of repeatability
+- Limitations:
+	- Scenario testing only useful for system level testing
+	- Depending on engineers’ understanding of the under-test system
+- Challenges:
+	- How to achieve the completed coverage for all of system scenarios?
+
+===============================
+(E) Catagory partition testing:
+===============================
+- The idea behind category partition testing is to divide the input domains of a component into N different disjoint partitions and select one value from each input domain to create a test case.
+- Steps:
+	Decompose function specifications into functional units.
+	Identify parameters and environment conditions.
+	Find categories of information.
+	Partition each category into choices.
+	Write test specification for each unit.
+	Produce test frames.
+	Generate test cases.
